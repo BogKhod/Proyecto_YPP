@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #eee;
+}
+
 h2 {
     font-family: serif;
 }
@@ -20,7 +24,7 @@ p {
     background-size: cover;
     position: relative;
 
-    border-bottom: 3rem #111 solid;
+    border-bottom: #111 solid 3rem;
 }
 
 .encabezado div {
@@ -96,8 +100,9 @@ p {
 .argumento .p1 .contenedor-img div,
 .argumento .p2 .contenedor-img div,
 .argumento .p3 .contenedor-img div,
-.argumento .p4 .contenedor-img div {
-    background-color: #eee;
+.argumento .p4 .contenedor-img div,
+.trailer .contenedor-iframe {
+    background-color: #fff;
     border: #111 solid 0.1rem;
     padding: 1rem 1rem 2rem;
     margin-bottom: 2rem;
@@ -117,4 +122,50 @@ p {
 .argumento .p4 .contenedor-img div p {
     font-size: 14px;
     margin: 0;
+}
+
+.trailer div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #111;
+    color: #eee;
+    padding: 2rem;
+}
+
+.footer li {
+    margin: .5rem 1.5rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer a:hover {
+    color: #f00;
+}
+
+.footer .creditos {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .argumento .p1,
+    .argumento .p2,
+    .argumento .p3,
+    .argumento .p4 {
+        flex-wrap: wrap;
+    }
+
+    .argumento .p1 .contenedor-img,
+    .argumento .p2 .contenedor-img,
+    .argumento .p3 .contenedor-img,
+    .argumento .p4 .contenedor-img {
+        width: 100%;
+        margin: 0;
+    }
 }

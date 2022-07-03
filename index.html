@@ -1,20 +1,3 @@
-<!-- 
-    El sitio debe incluir (como mínimo):
-    * Una descripción sobre el tema elegido para desarrollar la página web.         ✅
-    * Etiqueta title (modificando su contenido).                                    ✅
-    * Etiqueta <header>.                    --- ¿no son lo mismo?                   ✅
-    * Etiqueta de encabezado.               --- ¿no son lo mismo?                   ✅
-    * Etiquetas párrafos con contenido.                                             ✅
-    * Una imagen.                                                                   ✅
-    * Un vídeo embebido desde YouTube.                                              x
-    * Etiqueta <div>.                                                               ✅
-    * Etiqueta <footer>.                                                            x
-    * Un archivo .css.                                                              ✅
-    * Utilizar una imagen o color de fondo.                                         ✅
-    * Modificar tamaños y colores de las fuentes en alguna etiqueta.                x
-    * Modificar márgenes y alineaciones en alguna etiqueta.                         ✅
- -->
-
 <!DOCTYPE html>
 <html>
 
@@ -35,10 +18,12 @@
     </header>
 
     <section>
+        <!-- 1º ARTÍCULO: BREVE INTRODUCCIÓN A LA PÁGINA Y A LA PELÍCULA -->
         <article class="descripcion">
             <h2>INTRODUCCIÓN</h2>
             <p>
-                <span class="cursiva">A continuación les presento una de mis películas animadas favoritas:</span>
+                <span class="cursiva">Esta es una de aquellas películas que podría ver una y otra vez sin cansarme,
+                    resulta ser mágica para mí...</span>
             </p>
             <p>
                 <span class="negrita cursiva">El increíble castillo vagabundo</span>, del japonés
@@ -82,6 +67,8 @@
                 reconocimientos.
             </p>
         </article>
+
+        <!-- 2º ARTÍCULO: ARGUMENTO DE LA PELÍCULA -->
         <article class="argumento">
             <h2>ARGUMENTO</h2>
             <div class="p1">
@@ -164,8 +151,8 @@
                     verdadero amor. La Bruja del Páramo le dice al príncipe que su amor se había enamorado de otra
                     persona, a lo que él responde que los corazones de la gente podían cambiar y procede a regresar a su
                     reino para acabar con la guerra, prometiendo que vendría a visitarlos. Suliman, observando a través
-                    de un globo de cristal, decide terminar la guerra. Howl, Sophie y los demás son vistos en el aire
-                    en un nuevo castillo volador, mientras los bombarderos regresan de la guerra.
+                    de un globo de cristal, decide terminar la guerra. Howl, Sophie y los demás son vistos en el aire en
+                    un nuevo castillo volador, mientras los bombarderos regresan de la guerra.
                 </p>
                 <div class="contenedor-img">
                     <div>
@@ -176,15 +163,30 @@
             </div>
         </article>
 
+        <!-- 3º ARTÍCULO: TRÁILER EMBEBIDO DESDE YOUTUBE -->
         <article class="trailer">
             <h2>TRÁILER</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iwROgK94zcM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <div>
+                <div class="contenedor-iframe">
+                    <iframe class="video" width="560" height="320"
+                        src="https://www.youtube-nocookie.com/embed/iwROgK94zcM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </article>
     </section>
+
+    <footer class="footer">
+        <p>Fuentes:</p>
+        <ul>
+            <li> <a href="https://es.wikipedia.org/wiki/Howl_no_Ugoku_Shiro">Wikipedia</a> </li>
+            <li> <a href="https://www.ghibli.jp/works/howl/#frame">Studio Ghibli</a> </li>
+        </ul>
+        <p class="creditos">SKOROKHOD 2022</p>
+    </footer>
 </body>
 
 </html>
