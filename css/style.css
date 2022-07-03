@@ -93,8 +93,8 @@ p {
     margin-left: 2rem;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .argumento .p1 .contenedor-img div,
@@ -152,7 +152,7 @@ p {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .argumento .p1,
     .argumento .p2,
